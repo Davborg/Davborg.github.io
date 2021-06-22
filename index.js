@@ -8,7 +8,7 @@ var contractAddress = '0x567E2A8E4Df3845dEC5327F634c2c16EdbA2E1aA';
 var abi = JSON.parse( '[{"inputs": [{"internalType": "uint256","name": "num","type": "uint256"}],"name": "store","outputs": [],"stateMutability": "nonpayable","type": "function"},{"inputs": [],"name": "retrieve","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"stateMutability": "view","type": "function"}]' );
 
 //contract instance
-contract = new web3.eth.Contract(abi, contractAddress);
+var contract = new web3.eth.Contract(abi, contractAddress);
 
 // Accounts
 //var account;
@@ -17,15 +17,14 @@ contract = new web3.eth.Contract(abi, contractAddress);
 
 
 function registerGetInfo() {
-	//document.getElementById('lastInfo').innerHTML = "test2";
+	document.getElementById('lastInfo').innerHTML = "test2";
    //contract.methods.retrieve().call().then( function( info ) {
+	  // var provider = web3.eth.currentProvider;
 	   contract.methods.retrieve().call().then( function( info ) { 
-		//console.log("info: ", info);
+		alert(info);
 		document.getElementById('lastInfo').innerHTML = String(info);
 
     //contract.methods.retrieve().call().then( function (message){
 	//	document.getElementById('lastInfo').innerHTML = String(message);
-	});
-	
-  //});    
+	});    
 }
