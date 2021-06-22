@@ -15,6 +15,8 @@ contract = new web3.eth.Contract(abi, contractAddress);
 
 //Smart contract functions
 
+document.getElementById('lastInfo').innerHTML = String(contract.methods.retrieve().call());
+
 
 function registerGetInfo() {
 	//document.getElementById('lastInfo').innerHTML = "test2";
