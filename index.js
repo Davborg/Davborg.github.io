@@ -17,6 +17,7 @@ contract = new web3.eth.Contract(abi, contractAddress);
 
 
 function registerGetInfo() {
+	document.getElementById('lastInfo').innerHTML = "test";
   contract.methods.retrieve().call().then( function( info ) { 
     console.log("info: ", info);
     document.getElementById('lastInfo').innerHTML = "test";
