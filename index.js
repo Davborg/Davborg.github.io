@@ -15,10 +15,12 @@ contract = new web3.eth.Contract(abi, contractAddress);
 
 //Smart contract functions
 
-var message
+var message = 0;
 function registerGetInfo() {
-	document.getElementById('lastInfo').innerHTML = "test2";
-   //contract.methods.retrieve().call().then( function( info ) { 
-    document.getElementById('lastInfo').innerHTML = contract.methods.retrieve().call();
+	//document.getElementById('lastInfo').innerHTML = "test2";
+   //contract.methods.retrieve().call().then( function( info ) {
+	   
+    contract.methods.retrieve().call().then(message);
+	document.getElementById('lastInfo').innerHTML = message;
   //});    
 }
