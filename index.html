@@ -25,6 +25,8 @@
               if (typeof web3 === 'undefined'} {
                  $('#err_msg_box').html('You need <a href="htps://metamask.io">MetaMask</a> browser plugin to run this example');
               } else {
+				$('#err_msg_box').html('it works');
+				document.getElementById('lastInfo').innerHTML = "it works here";
                  // Here the code to execute the project
                  // No need to set Provider, use web3.eth directly
                  // web3.eth.getAccounts(function(err,res){ console.log(res);});
