@@ -21,9 +21,10 @@ document.getElementById('lastInfo').innerHTML = String(contract.methods.retrieve
 function registerGetInfo() {
 	//document.getElementById('lastInfo').innerHTML = "test2";
    //contract.methods.retrieve().call().then( function( info ) {
-	var message = 1;  
-    contract.methods.retrieve().call().then( function (message){
-		document.getElementById('lastInfo').innerHTML = String(message);
+	var message = 1;
+		document.getElementById('lastInfo').innerHTML = String(contract.methods.retrieve().call());
+    //contract.methods.retrieve().call().then( function (message){
+	//	document.getElementById('lastInfo').innerHTML = String(message);
 	});
 	
   //});    
