@@ -8,7 +8,16 @@
     <!--<script src="./node_modules/web3/dist/web3.min.js"></script>-->
 	<!--<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@0.18.2/dist/web3.min.js"></script>-->
 	<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@0.18.2/dist/web3.js"></script>
-    <script src="index.js"></script>    
+    <!--<script src="index.js"></script>-->
+
+	<script>
+		var web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/537393d11b444181a5f4c81702e0be5e'));
+		
+		function registerGetInfo() {
+			alert("I am an alert box!");
+			//document.getElementById('lastInfo').innerHTML = String(web3);
+		}
+	</script>
   </head>
  
   <body class="container"> 
