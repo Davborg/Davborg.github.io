@@ -21,7 +21,7 @@ function registerGetInfo() {
    //contract.methods.retrieve().call().then( function( info ) {
 	   contract.methods.retrieve().call().then( function( info ) { 
 		//console.log("info: ", info);
-		alert(info);
+		document.getElementById('lastInfo').innerHTML = String(info);
 
     //contract.methods.retrieve().call().then( function (message){
 	//	document.getElementById('lastInfo').innerHTML = String(message);
