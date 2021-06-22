@@ -22,7 +22,7 @@ function registerGetInfo() {
 	//document.getElementById('lastInfo').innerHTML = "test2";
    //contract.methods.retrieve().call().then( function( info ) {
 	var message = 1;
-		document.getElementById('lastInfo').innerHTML = String(contract.methods.retrieve().call());
+		document.getElementById('lastInfo').innerHTML = String(contractAddress);
     //contract.methods.retrieve().call().then( function (message){
 	//	document.getElementById('lastInfo').innerHTML = String(message);
 	});
