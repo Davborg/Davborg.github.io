@@ -4,7 +4,7 @@
     <title>DApp - Paketstatus</title>
  
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>-->
     <!--<script src="./node_modules/web3/dist/web3.min.js"></script>-->
 	<!--<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@0.18.2/dist/web3.min.js"></script>-->
 	<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@0.18.2/dist/web3.js"></script>
@@ -16,15 +16,32 @@
   </head>
  
   <body class="container"> 
+  
+  <p>Hello Project</p>
+      <div id="err_msg_box"></div>
 
-    <h1 class="page-header">Paketstatus:</h1>
+      <script>
+          window.onload = function(){
+              if (typeof web3 === 'undefined'} {
+                 $('#err_msg_box').html('You need <a href="htps://metamask.io">MetaMask</a> browser plugin to run this example');
+              } else {
+                 // Here the code to execute the project
+                 // No need to set Provider, use web3.eth directly
+                 // web3.eth.getAccounts(function(err,res){ console.log(res);});
+              }
+         }
+     </script>
+	 
+    
+
+    <!-- <h1 class="page-header">Paketstatus:</h1> -->
   
  
     <div class="row">
       <div>
         <h3 class="sub-header">Get last information saved</h3>
         <form class="form-inline" role="form">
-          <a href="#" onclick="registerGetInfo()" class="btn btn-primary">Get</a>
+         <!-- <a href="#" onclick="registerGetInfo()" class="btn btn-primary">Get</a> -->
           <div class="form-group">
             <table>
               <tr>
@@ -38,6 +55,8 @@
         </form>
       </div>
     </div>
+	
+	 <script src="assets/js/jquery-1.10.2.min.js"></script>
 
   </body>
 </html>
