@@ -5,9 +5,11 @@
 //connection with node
 var web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/537393d11b444181a5f4c81702e0be5e'));
 
-web3.eth.net.isListening()
-   .then(() => alert('web3 is connected'))
-   .catch(e => alert('Wow. Something went wrong'));
+// web3.eth.net.isListening()
+  // .then(() => alert('web3 is connected'))
+  // .catch(e => alert('Wow. Something went wrong'));
+   
+alert('web3 is connected');
 
 
 // contractAddress and abi are setted after contract deploy
