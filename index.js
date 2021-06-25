@@ -9,7 +9,7 @@ var web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v
   // .then(() => alert('web3 is connected'))
   // .catch(e => alert('Wow. Something went wrong'));
    
-alert('web3 is connected');
+
 
 
 // contractAddress and abi are setted after contract deploy
@@ -30,8 +30,8 @@ function registerGetInfo() {
    //contract.methods.retrieve().call().then( function( info ) {
 	  // var provider = web3.eth.currentProvider;
 	   //contract.methods.retrieve().call().then( function( info ) { 
-		alert(info);
-		document.getElementById('lastInfo').innerHTML = String(info);
+		alert('web3 is connected');
+		//document.getElementById('lastInfo').innerHTML = String(info);
 
     //contract.methods.retrieve().call().then( function (message){
 	//	document.getElementById('lastInfo').innerHTML = String(message);
